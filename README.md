@@ -11,4 +11,8 @@ Programa para componente Arduino de REdPORT, este módulo tiene sensores de temp
 
 1. Debes conectar los sensores al shield de Ethernet
 
-![alt text](http://microfun.es/img/web5.jpg "Conexión Shield Ehternet")
+![Conexión Shield Ehternet](http://microfun.es/img/web5.jpg "Conexión Shield Ehternet")
+
+2. En la siguiente imagen aparece el esquema de conexión de los sensores
+
+![Fritzing]()
