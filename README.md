@@ -1,5 +1,5 @@
 # arduino-sensor
-Programa para componente Arduino de REdPORT, este módulo tiene sensores de temperatura, humedad y UV, los valores de los sensores son obtenidos mediante. Primero debes tener los siguientes componentes:
+Programa para componente Arduino de REdPORT, este módulo tiene sensores de temperatura, humedad y UV, los valores de los sensores son obtenidos mediante el servicio web [REdPORT] (http://redport.cl/). Primero debes tener los siguientes componentes:
 
 1. [Arduino UNO](http://www.maxelectronica.cl/inicio/25-arduino-uno-r3-cable-usb-5-cables-m-m-5-cables-h-h.html)
 2. [Shield Ethernet] (http://www.maxelectronica.cl/inicio/4-arduino-shield-ethernet-w5100.html?search_query=ethernet&results=8)
