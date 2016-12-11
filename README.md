@@ -12,8 +12,7 @@ Programa para módulo Arduino de REdPORT, este módulo tiene sensores de tempera
 * Debes encajar el shield de Ethernet al Arduino UNO, luego debes conectar los cables que aparecen en la foto, el cable USB del Arduino al computador (para subir el código) y el cable de red (RJ45) al router que estés configurando. 
 ![Conexión Shield Ehternet](http://microfun.es/img/web5.jpg "Conexión Shield Ehternet")
 
-* En la siguiente imagen aparece el esquema de conexión de los sensores, debes tener especial atención en los voltajes, porque estos sensores trabajan a 3.3V, si los conectas a 5V podrías dañarlos.
-
+* En la siguiente imagen aparece el esquema de conexión de los sensores, debes tener especial atención en los voltajes, porque estos sensores trabajan a 3.3V, si los conectas a 5V podrías dañarlos. Puedes añadir un led al PIN 13 de Arduino para hacer más fácil la configuración, aunque por defecto todas las placas Arduino traen un LED interno conectado al PIN 13.
 ![Conexiones](https://github.com/mesh-redport/arduino-sensor/blob/master/img/conexiones.png?raw=true "Conexiones")
 
 # Código
@@ -28,7 +27,7 @@ Programa para módulo Arduino de REdPORT, este módulo tiene sensores de tempera
 
 En el código de Arduino debes determinar la IP que usará el Arduino dentro de la Red que estés configurando, por defecto nosotros dejamos la IP 192.168.1.100, pero puedes usar la IP que necesites, en este código tambien puedes determinar la MAC que usará el dispositivo.
 
-```IDE
+```
 IPAddress ip(192,168,1,100);
 ```
 
