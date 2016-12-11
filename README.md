@@ -26,5 +26,11 @@ Programa para módulo Arduino de REdPORT, este módulo tiene sensores de tempera
 3. [SHT2] (https://github.com/adafruit/DHT-sensor-library)
 4. [Wire] (https://www.arduino.cc/en/Reference/Wire)
 
+En el código de Arduino debes determinar la IP que usará el Arduino dentro de la Red que estés configurando, por defecto nosotros dejamos la IP 192.168.1.100, pero puedes usar la IP que necesites, en este código tambien puedes determinar la MAC que usará el dispositivo.
+
+```IDE
+IPAddress ip(192,168,1,100);
+```
+
 
 
