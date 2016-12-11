@@ -9,10 +9,20 @@ Programa para módulo Arduino de REdPORT, este módulo tiene sensores de tempera
 </br>
 # Conexión 
 
-* Debes conectar los sensores al shield de Ethernet
-
+* Debes encajar el shield de Ethernet al Arduino UNO, luego debes conectar los cables que aparecen en la foto, el cable USB del Arduino al computador (para subir el código) y el cable de red (RJ45) al router que estés configurando. 
 ![Conexión Shield Ehternet](http://microfun.es/img/web5.jpg "Conexión Shield Ehternet")
 
-* En la siguiente imagen aparece el esquema de conexión de los sensores
+* En la siguiente imagen aparece el esquema de conexión de los sensores, debes tener especial atención en los voltajes, porque estos sensores trabajan a 3.3V, si los conectas a 5V podrías dañarlos.
 
 ![Conexiones](https://github.com/mesh-redport/arduino-sensor/blob/master/img/conexiones.png?raw=true "Conexiones")
+
+# Código
+
+* En este paso subiremos el código de Arduino, para esto debemos instalar las siguientes librerías:
+1. (SPI)[https://www.arduino.cc/en/Reference/SPI]
+2. (Ethernet)[https://www.arduino.cc/en/Reference/Ethernet]
+3. (SHT2) [https://github.com/adafruit/DHT-sensor-library]
+4. (Wire) [https://www.arduino.cc/en/Reference/Wire]
+
+
+
