@@ -30,6 +30,4 @@ En el código de Arduino debes determinar la IP que usará el Arduino dentro de 
 ```
 IPAddress ip(192,168,1,100);
 ```
-
-
-
+Una vez que cambies la IP dentro del dominio de tu router, debes subir compilar el código y luego subirlo a la placa. Puedes revisar este procedimiento desde [acá] (https://www.arduino.cc/en/Main/Howto)
