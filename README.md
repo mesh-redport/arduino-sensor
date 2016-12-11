@@ -32,8 +32,8 @@ IPAddress ip(192,168,1,100);
 ```
 Una vez que cambies la IP dentro del dominio de tu router, debes subir compilar el código y luego subirlo a la placa. Puedes revisar este procedimiento desde [acá] (https://www.arduino.cc/en/Main/Howto)
 
-Genera un archivo .txt llamado seed, con los datos que posteriormente guarda en la base de datos.
-https://github.com/mesh-redport/redport/blob/master/visor.php
+Genera un archivo [.txt llamado seed](https://github.com/mesh-redport/redport/blob/master/visor.php), con los datos que posteriormente guarda en la base de datos.
+
 
 El código que llama a desde home.php a los datos de los indicadores es el siguiente:
 ```PHP
