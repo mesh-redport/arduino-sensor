@@ -36,6 +36,7 @@ Genera un archivo .txt llamado seed, con los datos que posteriormente guarda en 
 https://github.com/mesh-redport/redport/blob/master/visor.php
 
 El código que llama a desde home.php a los datos de los indicadores es el siguiente:
+```PHP
 <div class="indicators">
 
     <?php
@@ -79,3 +80,4 @@ El código que llama a desde home.php a los datos de los indicadores es el sigui
         echo "<div class='bar_h' style='width: ".(abs($row['valor'])/100*75)."%;'></div>";
       }
       ?>                   
+```
