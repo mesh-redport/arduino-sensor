@@ -39,7 +39,7 @@ El código que llama desde home.php a los datos de los indicadores es el [siguie
 
 Luego en el servicio de REdPORT se visualizan los valores obtenidos por el Arduino.
 
-(https://github.com/mesh-redport/arduino-sensor/blob/master/img/sensor.jpg?raw=true)
+![Aplicación](https://github.com/mesh-redport/arduino-sensor/blob/master/img/sensor.jpg?raw=true "App")
 
 
 
