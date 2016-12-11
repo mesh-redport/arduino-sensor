@@ -20,6 +20,7 @@ Programa para módulo Arduino de REdPORT, este módulo tiene sensores de tempera
 
 * En este paso subiremos el código de Arduino, para esto debemos [instalar](https://www.arduino.cc/en/Guide/Libraries) las siguientes librerías:
 </br>
+
 1. [SPI] (https://www.arduino.cc/en/Reference/SPI)
 2. [Ethernet] (https://www.arduino.cc/en/Reference/Ethernet)
 3. [SHT2] (https://github.com/adafruit/DHT-sensor-library)
