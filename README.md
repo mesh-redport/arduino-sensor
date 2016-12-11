@@ -15,4 +15,4 @@ Programa para módulo Arduino de REdPORT, este módulo tiene sensores de tempera
 
 * En la siguiente imagen aparece el esquema de conexión de los sensores
 
-![Fritzing]()
+![Conexiones](https://github.com/mesh-redport/arduino-sensor/blob/master/img/conexiones.png?raw=true "Conexiones")
