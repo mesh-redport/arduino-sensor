@@ -31,3 +31,51 @@ En el código de Arduino debes determinar la IP que usará el Arduino dentro de 
 IPAddress ip(192,168,1,100);
 ```
 Una vez que cambies la IP dentro del dominio de tu router, debes subir compilar el código y luego subirlo a la placa. Puedes revisar este procedimiento desde [acá] (https://www.arduino.cc/en/Main/Howto)
+
+Genera un archivo .txt llamado seed, con los datos que posteriormente guarda en la base de datos.
+https://github.com/mesh-redport/redport/blob/master/visor.php
+
+El código que llama a desde home.php a los datos de los indicadores es el siguiente:
+<div class="indicators">
+
+    <?php
+    $shots = mysql_query("SELECT id,tipo,valor,fecha FROM mesh_redport.sensores ORDER BY id DESC LIMIT 3;") or die(mysql_error());
+    while($row = mysql_fetch_assoc($shots)) { ?>
+    <div class="indicator">
+      <?php
+      if($row["tipo"] == "Temperatura"){
+        echo "<div class='rpicon-temperature'></div>";
+      }else if($row["tipo"] == "UV"){
+        echo "<div class='rpicon-uv'></div>";
+      }else if($row["tipo"] == "Humedad"){
+        echo "<div class='rpicon-humedity'></div>";
+      }
+      if($row["tipo"] == "Temperatura"){
+        echo "<p class='text_indicator'>".round($row['valor'])."°C</p>";
+      }else if($row["tipo"] == "UV"){
+        if(round($row["valor"]) <= 2){
+          echo "<p class='text_indicator' style='color:#41ab4b;'>BAJO</p>";
+        }else if(round($row["valor"]) <= 5){
+          echo "<p class='text_indicator' style='color:orange;'>MEDIO</p>";
+        }else if(round($row["valor"]) <= 7){
+          echo "<p class='text_indicator' style='color:orangered;'>ALTO</p>";
+        }else if(round($row["valor"]) <= 10){
+          echo "<p class='text_indicator' style='color:#f71138;'>MUY ALTO</p>";
+        }else if(round($row["valor"]) >= 11){
+          echo "<p class='text_indicator' style='color:#7a58dc;'>EXTREMO</p>";
+        }
+      }else if($row["tipo"] == "Humedad"){
+        echo "<p class='text_indicator'>".round($row['valor'])."%</p>";
+      }
+      if($row["tipo"] == "UV"){
+        //echo "<span class='text_uv'>uv</span>";
+        echo "<div class='bar_background'></div>";
+        echo "<div class='bar_uv' style='width: ".(abs($row['valor']*100)+10)."%;'></div>";
+      }else if($row["tipo"] == "Temperatura"){
+        echo "<div class='bar_background'></div>";
+        echo "<div class='bar_t' style='width: ".(abs($row['valor'])/50*75)."%;'></div>";
+      }else if($row["tipo"] == "Humedad"){
+        echo "<div class='bar_background'></div>";
+        echo "<div class='bar_h' style='width: ".(abs($row['valor'])/100*75)."%;'></div>";
+      }
+      ?>                   
