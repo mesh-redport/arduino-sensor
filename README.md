@@ -7,7 +7,7 @@ Programa para módulo Arduino de REdPORT, este módulo tiene sensores de tempera
 4. [Sensor UV ML8511] (http://www.maxelectronica.cl/luz-color/167-modulo-ml8511-sensor-de-luz-y-radiacion-ultravioleta-uv-a-uv-b.html?search_query=UV&results=1)
 
 </br>
-# Conexión 
+# Conexión PRUEBA DE EDICIÖN!!!!!!
 
 * Debes encajar el shield de Ethernet al Arduino UNO, luego debes conectar los cables que aparecen en la foto, el cable USB del Arduino al computador (para subir el código) y el cable de red (RJ45) al router que estés configurando. 
 ![Conexión Shield Ehternet](http://microfun.es/img/web5.jpg "Conexión Shield Ehternet")
