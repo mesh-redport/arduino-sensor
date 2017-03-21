@@ -1,4 +1,4 @@
-# arduino-sensor
+# arduino-sensor MODIFICADO
 Programa para módulo Arduino de REdPORT, este módulo tiene sensores de temperatura, humedad y UV, los valores de los sensores son obtenidos mediante el servicio web [REdPORT] (http://redport.cl/). Para armar tu módulo de sensores, primero debes tener los siguientes componentes:
 
 1. [Arduino UNO](http://www.maxelectronica.cl/inicio/25-arduino-uno-r3-cable-usb-5-cables-m-m-5-cables-h-h.html)
